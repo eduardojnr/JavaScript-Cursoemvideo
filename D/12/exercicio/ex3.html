@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo D - Exercícios 1 - Ex1</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1 id="cabecalho">Fotos</h1>
+
+    <fieldset id="selecao_horario">
+        <legend>Qual horário do dia você deseja?</legend>
+        <input type="checkbox" id="selecao_sistema" value="automatico" onclick="controlar_selecao()"> Do sistema
+        <input type="checkbox" id="selecao_dia" value="dia" onclick="controlar_selecao()"> Dia claro
+        <input type="checkbox" id="selecao_entardecer" value="entardecer" onclick="controlar_selecao()"> Entardecer
+        <input type="checkbox" id="selecao_noite" value="noite" onclick="controlar_selecao()"> Noite
+    </fieldset>
+
+    <div id="foto"></div>
+
+
+    <footer id="footer">&copy;eduardojnnr_</footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

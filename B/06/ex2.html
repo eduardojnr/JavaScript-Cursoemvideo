@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo B - Aula 06 - Ex2</title>
+
+    <style>
+        body {
+            background-color: black;
+            font: normal 12pt Arial;
+            color: rgb(123, 255, 0);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum</h1>
+
+    <p>Ameno Dorime</p>
+
+    <script>
+        var n1 = Number.parseFloat(window.prompt("Digite o primeiro número"));
+        var n2 = Number.parseInt(window.prompt("Digite o segundo número"));
+        var n3 = Number(window.prompt("Digite o terceiro número"));
+        var total = String(n1 + n2 + n3);
+        window.alert("A soma dos números é: " + total);
+        window.alert(`A soma dos números é: ${total}`);        
+    </script>
+</body>
+</html> 

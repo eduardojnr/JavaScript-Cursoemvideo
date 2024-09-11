@@ -1,0 +1,53 @@
+body {
+    background-color: black;
+}
+
+h1#cabecalho{
+    color: rgb(123, 255, 0);
+    text-align: center;
+}
+
+fieldset#input_pa_pg{
+    background-color: rgb(68, 68, 68);
+    color: rgb(123, 255, 0); 
+    text-align: center;  
+    width: 70%;
+    margin: 0px auto;
+    margin-top: 1%;
+    border-color: rgb(123, 255, 0);
+}
+
+fieldset#inputs {
+    background-color: rgb(68, 68, 68);
+    color: rgb(123, 255, 0); 
+    text-align: center;  
+    width: 70%;
+    margin: 0px auto;
+    margin-top: 1%;
+    border-color: rgb(123, 255, 0);
+}
+
+input#input_inicio{
+    width: 50px;
+    text-align: center;
+}
+
+input#input_fim{
+    width: 50px;
+    text-align: center;
+}
+
+input#input_razao{
+    width: 50px;
+    text-align: center;
+}
+
+div#msg {
+    color: rgb(123, 255, 0); 
+}
+
+footer#footer{
+    color: rgb(123, 255, 0);
+    text-align: center;
+    margin-top: 1%;
+}

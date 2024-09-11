@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo B - Aula 06 - Ex3</title>
+    <style>
+        body {
+            background-color: black;
+            color: rgb(123, 255, 0);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p>Olá, mundo</p>
+    <script>
+        var nome = String(window.prompt('Qual é o seu nome?'));
+        var saldo = Number(window.prompt('Quantos reais você tem na conta?'));
+        document.write(`Olá, ${nome.toUpperCase()}.<br/>Seu nome possui ${nome.length} letras.<br/>`);
+        document.write(`Você possui R$${saldo.toFixed(2).replace('.', ',')}.<br/>`); //Fixa duas casas decimais e substitui o separador de . para ,
+        document.write(`${saldo.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+body{
+    background-color: black;
+    color: rgb(123, 255, 0);
+    text-align: center;
+}
+
+input#numero{
+    margin: 1%;
+    width: 200px;
+    
+}
+
+select#visor{
+    width: 155px;
+}
+
+input#finalizar{
+    margin: 1%;
+}
+

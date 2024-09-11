@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo C - Aula 09 - Ex1</title>
+    <style>
+        body {
+            background-color: black;
+            color: rgb(123, 255, 0);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h1">Olá, mundo 1</h1>
+    <h1 id="h2">Olá, mundo 2</h2>
+    <p id="p1">Lorem Ipsum 1</p>
+    <p id="p2">Lorem Ipsum 2</p>
+    <div id="div1" name="nome_div1">Ameno Dorime 1<p></p></div>
+    <div id="div2" class="classe_div2">Ameno Dorime 2</div>
+    <div id="div3"><p></p>==========================<p></p></div>
+    <script>
+        var porMarca   = window.document.getElementsByTagName('h1')[0];
+        var porId      = window.document.getElementById('p1');
+        var porNome    = window.document.getElementsByName('nome_div1')[0];
+        var porClasse  = window.document.getElementsByClassName('classe_div2')[0];
+        var porSeletor1 = window.document.querySelector('div#div1'); // # quando usar id
+        var porSeletor2 = window.document.querySelector('div.classe_div2'); // . quando usar classe 
+
+        window.document.write(`ByTagName - porMarca - ${porMarca.innerText}<br/><br/>`);
+        window.document.write(`ById - porId - ${porId.innerText}<br/><br/>`);
+        window.document.write(`ByName - porNome - ${porNome.innerText}<br/><br/>`);
+        window.document.write(`ByClassName - porClasse - ${porClasse.innerText}<br/><br/>`);
+        window.document.writeln(`BySelector - porSeletor1 - ${porSeletor1.innerText}<br/><br/>`);
+        window.document.writeln(`BySelector - porSeletor2 - ${porSeletor2.innerText}`);
+    </script>
+
+</body>
+</html>

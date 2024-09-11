@@ -1,1 +1,1 @@
-# javascript-curso
+# javascript-cursoemvideo

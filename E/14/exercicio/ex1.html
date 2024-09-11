@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo E - Exercício 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="cabecalho">Progressão aritmética e geométrica entre um intervalo</h1>
+
+    <fieldset id="input_pa_pg">
+        <legend>Informe o tipo desejado</legend>
+
+        <input type="checkbox" id="aritmetica" value="pa" onclick="controlar_selecao()">Progressão Aritmética
+        <input type="checkbox" id="geometrica" value="pg" onclick="controlar_selecao()">Progressão Geométrica
+    </fieldset>
+
+    <fieldset id="inputs">
+
+        <legend>Informe os valores</legend>
+        Primeiro elemento: <input type="number" id="input_inicio">
+        Último elemento: <input type="number" id="input_fim">
+        Razão: <input type="number" id="input_razao">
+
+        <input type="button" id="button_contar" value="Gerar" onclick="validar_tipo_progressao()">
+
+        <div id="msg"></div>
+    </fieldset>
+
+    <footer id="footer">&copy;eduardojnnr_</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

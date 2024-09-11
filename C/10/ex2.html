@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo C - Aula 10 - Ex2</title>
+    <style>
+        body{
+            background-color: black;
+            color: rgb(0, 0, 0);
+        }
+        
+        div#quadrado{
+            background-color: rgb(123, 255, 0);
+            width: 400px; /* largura */
+            height: 200px; /* altura */
+            line-height: 200px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="quadrado">    
+        Traga o mouse até esse quadrado.
+    </div>
+
+    <script>
+        var msg = window.document.getElementById('quadrado')
+        msg.addEventListener('click', mouseClick)
+        msg.addEventListener('mouseenter', mouseEnter)
+        msg.addEventListener('mouseout', mouseOut)
+
+        function mouseEnter(){
+            msg.innerText = 'Agora clique com o botão esquerdo do mouse.'
+        }
+
+        function mouseOut(){
+            msg.innerText = 'Traga o mouse de volta'
+        }
+
+        function mouseClick(){
+            msg.innerText = 'Parabéns!'
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+body{
+    background-color: black;
+}
+
+h1#cabecalho{
+    color: rgb(123, 255, 0);
+    text-align: center;
+    background-color: grey;
+    border-radius: 5px;
+    padding-top: 1px;
+    width: 500px;
+    margin: auto;
+}
+
+fieldset{
+    color: rgb(123, 255, 0);
+    text-align: center;
+    width: 40%;
+    margin: 0px auto;
+    margin-top: 1%;
+}
+
+div#foto{
+    color: rgb(123, 255, 0);
+    text-align: center;
+    margin-top: 1%;
+}
+
+
+footer#footer{
+    color: rgb(123, 255, 0);
+    text-align:center
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo C - Aula 10 - Ex2</title>
+    <style>
+        body{
+            background-color: black;
+            color: rgb(123, 255, 0);
+            text-align: center;
+        }
+
+        div#resultado{
+            color: rgb(123, 255, 0);
+        }
+
+        input#numero1{
+            width: 50px;
+            height: 20px;
+        }
+
+        input#numero2{
+            width: 50px;
+            height: 20px;
+        }
+
+        input#botao_soma{
+            width: 50px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Somando valores <h1>
+    <input type="number" name="numero1" id="numero1"> +
+    <input type="number" name="numero2" id="numero2"> =
+    <input type="result" id="botao_soma" value="Calcular" onclick="somar()">
+    <div id="resultado"></div>
+
+    <script>
+        function somar(n1, n2){
+            var n1 = Number(window.document.getElementById('numero1').value)
+            var n2 = Number(window.document.getElementById('numero2').value)
+            var s = n1 + n2
+        
+            var res = window.document.getElementById('resultado')
+            res.innerHTML = `<p></p>O resultado da soma é ${s}`
+        }
+    </script>
+    
+</body>
+</html>

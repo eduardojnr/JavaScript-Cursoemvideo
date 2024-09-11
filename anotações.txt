@@ -1,0 +1,129 @@
+node <path>
+===========
+
+<head> --> configurações
+    <style> --> css
+
+<body> --> conteúdo e scripts
+    conteúdo --> html
+        h1 --> título
+        p  --> parágrafo
+        div
+
+    scripts --> JavaScript
+
+----------------------------------------
+
+==== Tipos ====
+
+number
+    Infinity
+    NaN
+
+string
+
+boolean
+
+null
+
+undefined
+
+object
+    Array
+
+function
+
+Podem ser consultados com um typeof
+
+----------------------------------------
+
+==== Operadores ===
+
+aritméticos
+    + - --> Soma e subtração
+    *   --> Multiplicação
+    /   --> Divisão 
+    %   --> Resto da divisão inteira
+    **  --> Potência
+
+atribuição (retorna true ou false)
+    +=
+    -=
+    *=
+    /=
+    **=
+
+relacionais
+    ><
+    >= <=
+    ==   Comparação de diferentes tipos pode retornar true
+    ===  Comparação inclusive dos tipos
+    !=
+
+lógicos
+    !  --> negação
+    && --> conjunção (um e outro)
+    || --> disjunção (um ou outro)
+
+ternário
+    ?  --> teste_lógico ? true : false
+
+----------------------------------------
+
+condições
+    if (condição) {}
+    if (condição) {} else {}
+    if (condição) {} else if () {} else {}
+    switch (expressão) {
+        case condição: 
+            ...
+            break
+        case condição: 
+            ...
+            break
+        default:
+            ...
+            break
+    }
+
+----------------------------------------            
+
+estruturas de repetição
+    while (condição) {} // teste lógico é feito no início
+    do {} while ()      // teste lógico é feito no final // sempre executa o do {} pelo menos uma vez
+    for (var c = 1; c <= 10; c++) {}
+
+----------------------------------------
+
+==== Document Object Model (DOM) ===
+    por Marca   --> window.document.getElementsByTagName()[]
+    por ID      --> window.document.getElementsByID()
+    por Nome    --> window.document.getElementsByName()[]
+    por Classe  --> window.document.getElementsByClassName()[]
+    por Seletor --> window.document.querySelector('div#id')   - # quando for Id
+                --> window.document.querySelector('div.nome') - quando for classe
+                --> querySelectorAll()
+
+----------------------------------------
+
+==== Funções ===
+    function nome (){}
+
+----------------------------------------
+
+==== Objetos ===
+
+let pessoa = {nome: `José`, sexo: `M`, peso:85.4, engordar(p){this.peso += p} }
+
+----------------------------------------
+
+O que estudar nos próximos passos:
+    HTML + CSS
+    functions
+    objetos (POO)
+    modularização
+    RegEx
+    JSON
+    AJAX
+    NodeJS
+    Frameworks (jQuery, vueJS, Angular etc.)

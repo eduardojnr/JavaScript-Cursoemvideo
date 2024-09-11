@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo D - Aula 11 - Ex2</title>
+    <style>
+        body {
+            background-color: black;
+            color: rgb(123, 255, 0);
+            text-align: center;
+        }
+
+        fieldset#fieldset_velocidade_local{
+            text-align: center;
+            border-color: rgb(123, 255,0);
+            width: 30%;
+            margin: 0px auto;
+        }
+
+        input#velocidade_registrada{
+            text-align: center;
+            border-color: rgb(123, 255,0);
+            margin: 35px auto;
+        }
+
+        input#verificar_velocidade{
+            background-color: black;
+            border-color: rgb(123,255,0);
+            color: rgb(123, 255, 0);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+
+    <fieldset id="fieldset_velocidade_local">
+        <legend>Qual é a velocidade máxima permitida no local?</legend>
+            <input type="checkbox" id="velocidade_local_40" value="40" onclick="controlar_velocidade_local()"> 40 km/h
+            <input type="checkbox" id="velocidade_local_60" value="60" onclick="controlar_velocidade_local()"> 60 km/h
+            <input type="checkbox" id="velocidade_local_80" value="80" onclick="controlar_velocidade_local()"> 80 km/h 
+    </fieldset>
+    
+    <input type="number" id="velocidade_registrada" placeholder="Velocidade registrada">
+
+    <input type="button" id="verificar_velocidade" value="Aferir" onclick="verificar_velocidade()">
+
+    <div id="mensagem_retorno"></div>
+
+    <script>
+        function controlar_velocidade_local() {
+            var checkboxes = window.document.querySelectorAll('#fieldset_velocidade_local input[type="checkbox"]') // Busca todos os valores
+            checkboxes.forEach(checkbox => { // Percorre cada um deles
+                checkbox.addEventListener('change', function() { // Evento identifica sempre que outro checkbox for marcado e chama uma função anônima
+                    if (this.checked) {            // Se um estiver marcado, percorre os outros
+                        checkboxes.forEach(cb => { //  
+                            if (cb !== this) {     //
+                                cb.checked = false //
+                            }
+                        })
+                    }
+                })
+            })
+        }    
+
+        function verificar_velocidade() {
+            var msg = window.document.getElementById('mensagem_retorno')
+            var velocidade_registrada = Number.parseFloat(window.document.getElementById('velocidade_registrada').value)
+            var checkboxes = window.document.querySelectorAll('#fieldset_velocidade_local input[type="checkbox"]')
+            checkboxes.forEach(checkbox => {
+                if (checkbox.checked) {
+                    if (checkbox.value >= velocidade_registrada) {
+                    msg.innerText = `Nenhuma multa gerada`
+                    } else {
+                    msg.innerText = `Multa gerada`
+                    }
+                } 
+            })
+        }
+    </script>
+</body>
+</html>
